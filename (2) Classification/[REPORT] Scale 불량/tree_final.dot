@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="ROLLING_TEMP_T5 <= 1001.0\ngini = 0.422\nsamples = 274\nvalue = [191, 83]\nclass = Good", fillcolor="#e5813990"] ;
+1 [label="FUR_SZ_TEMP <= 1175.5\ngini = 0.185\nsamples = 213\nvalue = [191, 22]\nclass = Good", fillcolor="#e58139e2"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="FUR_TIME <= 222.5\ngini = 0.095\nsamples = 201\nvalue = [191, 10]\nclass = Good", fillcolor="#e58139f2"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Bad", fillcolor="#399de5ff"] ;
+2 -> 3 ;
+4 [label="FUR_SZ_TIME <= 38.5\ngini = 0.086\nsamples = 200\nvalue = [191, 9]\nclass = Good", fillcolor="#e58139f3"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Bad", fillcolor="#399de5ff"] ;
+4 -> 5 ;
+6 [label="ROLLING_DESCALING_GR_10 <= 0.5\ngini = 0.077\nsamples = 199\nvalue = [191, 8]\nclass = Good", fillcolor="#e58139f4"] ;
+4 -> 6 ;
+7 [label="PT_THK <= 19.56\ngini = 0.136\nsamples = 109\nvalue = [101, 8]\nclass = Good", fillcolor="#e58139eb"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = Bad", fillcolor="#399de5ff"] ;
+7 -> 8 ;
+9 [label="ROLLING_DESCALING_GR_6 <= 0.5\ngini = 0.073\nsamples = 105\nvalue = [101, 4]\nclass = Good", fillcolor="#e58139f5"] ;
+7 -> 9 ;
+10 [label="ROLLING_DESCALING_GR_8 <= 0.5\ngini = 0.162\nsamples = 45\nvalue = [41, 4]\nclass = Good", fillcolor="#e58139e6"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = Bad", fillcolor="#399de5ff"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 41\nvalue = [41, 0]\nclass = Good", fillcolor="#e58139ff"] ;
+10 -> 12 ;
+13 [label="gini = 0.0\nsamples = 60\nvalue = [60, 0]\nclass = Good", fillcolor="#e58139ff"] ;
+9 -> 13 ;
+14 [label="gini = 0.0\nsamples = 90\nvalue = [90, 0]\nclass = Good", fillcolor="#e58139ff"] ;
+6 -> 14 ;
+15 [label="gini = 0.0\nsamples = 12\nvalue = [0, 12]\nclass = Bad", fillcolor="#399de5ff"] ;
+1 -> 15 ;
+16 [label="gini = 0.0\nsamples = 61\nvalue = [0, 61]\nclass = Bad", fillcolor="#399de5ff"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
